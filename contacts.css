@@ -128,7 +128,6 @@ html, body {
 
 
 
-
 /* Header with Nav Icon */
 header {
     position:fixed;
@@ -153,7 +152,6 @@ header {
     z-index: 1001; /* Ensures it stays above other content */
     margin-left: 0; /* Removes extra margin */
 }
-
 
 /* Fixed nav menu */
 nav {
