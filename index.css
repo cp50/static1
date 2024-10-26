@@ -15,7 +15,7 @@ body {
 
 /* Header with Nav Icon */
 header {
-    position: fixed;
+    position:relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -29,7 +29,7 @@ header {
 
 /* Nav Icon Styling */
 .nav-icon {
-    position: fixed; /* Keeps it fixed at the top */
+    position: relative; /* Keeps it fixed at the top */
     top: 0px; /* Adjusts its distance from the top */
     left: 10px; /* Adjusts its distance from the left */
     font-size: 40px;
