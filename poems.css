@@ -117,22 +117,27 @@ body {
     }
 }
 
+
+
+
+
 /* Header with Nav Icon */
 header {
-    position: relative;
+    position:relative;
     top: 0;
     left: 0;
     width: 100%;
     background-color: transparent;
-    color: rgb(18, 17, 17);
-    padding: 5px;
+    color: rgb(21, 20, 20);
+    padding: 10px;
     text-align: left;
-    z-index: 1000;
+    z-index: 1000; /* Ensure header stays on top */
 }
+
 
 /* Nav Icon Styling */
 .nav-icon {
-    position: relative; /* Keeps it fixed at the top */
+    position:relative; /* Keeps it fixed at the top */
     top: 0px; /* Adjusts its distance from the top */
     left: 10px; /* Adjusts its distance from the left */
     font-size: 40px;
@@ -168,22 +173,4 @@ nav ul li a {
     font-size: 18px;
 }
 
-/* Responsive nav adjustments */
-@media (max-width: 600px) {
-    header {
-        text-align: center;
-    }
 
-    .nav-icon {
-        margin-left: 0;
-    }
-
-    nav {
-        width: 90%;
-        left: 5%; /* Center nav menu on smaller screens */
-    }
-
-    nav ul li a {
-        font-size: 16px;
-    }
-}
