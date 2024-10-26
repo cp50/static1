@@ -28,24 +28,24 @@ header {
 
 /* Nav Icon Styling */
 .nav-icon {
-    position: relative; /* Keeps it fixed at the top */
-    top: 10px; /* Adjusts its distance from the top */
-    left: 10px; /* Adjusts its distance from the left */
+    position: relative;
+    top: 10px;
+    left: 10px;
     font-size: 40px;
     cursor: pointer;
-    z-index: 1001; /* Ensures it stays above other content */
+    z-index: 1001;
 }
 
 /* Fixed nav menu */
 nav {
     display: none;
-    position: fixed; /* Keeps nav fixed at the top */
-    top: 50px; /* Position it right below the header */
+    position: fixed;
+    top: 50px;
     left: 10px;
     background-color: #4e4a4a;
     padding: 30px;
     border-radius: 10px;
-    z-index: 1000; /* Ensure nav menu stays on top */
+    z-index: 1000;
 }
 
 nav ul {
@@ -81,11 +81,11 @@ p {
 /* Homepage Image Styling */
 .homepage-image {
     width: 100%;
-    max-width: 800px; /* Set max-width for responsive control */
+    max-width: 800px;
     height: auto;
     margin-top: 20px;
-    border-radius: 10px; /* Optional: rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: shadow effect */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Footer Button Styling */
@@ -94,9 +94,9 @@ p {
     justify-content: center;
     align-items: center;
     margin-top: 30px;
-    gap: 15px; /* Space between buttons */
-    flex-wrap: nowrap; /* Prevents buttons from stacking */
-    overflow-x: auto; /* Allows horizontal scrolling on smaller screens if needed */
+    gap: 15px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
     padding: 10px;
 }
 
@@ -132,7 +132,7 @@ p {
 @media screen and (max-width: 768px) {
     /* Override the header alignment on mobile */
     header {
-        text-align: left; /* Keeps header text aligned left */
+        text-align: left;
     }
 
     /* Ensures nav icon is fixed to the left on mobile */
@@ -155,5 +155,29 @@ p {
     /* Center-align text */
     h1, p {
         text-align: center;
+    }
+
+    /* Make buttons scroll horizontally on mobile and reduce their size */
+    .button-container {
+        gap: 10px; /* Reduce space between buttons */
+        padding: 5px;
+    }
+
+    .custom-btn {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Additional adjustments for very small screens */
+    .button-container {
+        flex-wrap: nowrap; /* Ensures buttons don’t stack */
+        overflow-x: auto; /* Horizontal scrolling for buttons */
+    }
+
+    .custom-btn {
+        padding: 6px 12px;
+        font-size: 14px;
     }
 }
