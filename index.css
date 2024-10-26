@@ -1,0 +1,161 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fefafa;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* Header with Nav Icon */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    color: rgb(21, 20, 20);
+    padding: 10px;
+    text-align: left;
+    z-index: 1000; /* Ensure header stays on top */
+}
+
+/* Nav Icon Styling */
+.nav-icon {
+    font-size: 40px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Hide nav menu initially */
+nav {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    background-color: #4e4a4a;
+    padding: 30px;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Main Content */
+.main-content {
+    margin-top: 80px;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Homepage Image Styling */
+.homepage-image {
+    width: 100%;
+    max-width: 800px; /* Set max-width for responsive control */
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px; /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: shadow effect */
+}
+
+/* Footer Button Styling */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 15px; /* Space between buttons */
+}
+
+.custom-btn {
+    background-color: #464646;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-btn .btn-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+}
+
+/* Hover and Focus Effects */
+.custom-btn:hover {
+    background-color: #555;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.custom-btn:focus,
+.custom-btn:active {
+    background-color: #444;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    /* Stack buttons vertically on smaller screens */
+    .button-container {
+        flex-direction: column;
+    }
+
+    .custom-btn {
+        width: 100%; /* Full-width buttons */
+        text-align: center;
+    }
+
+    /* Center align nav icon and main content text */
+    .nav-icon {
+        margin-left: 0;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    .main-content {
+        margin-top: 100px;
+        padding: 10px;
+    }
+
+    /* Adjust homepage image on small screens */
+    .homepage-image {
+        max-width: 90%;
+        border-radius: 5px;
+    }
+
+    /* Center-align text */
+    h1, p {
+        text-align: center;
+    }
+}

@@ -1,0 +1,184 @@
+/* General styles for body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #efe4e4;
+}
+
+/* Container for the entire poems section */
+.poems-container {
+    text-align: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-grow: 1;
+}
+
+/* Heading style */
+.poems-heading {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Grid container for the poem boxes */
+.poems-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+    gap: 30px; /* Increase gap between all poem boxes (horizontal and vertical) */
+    padding: 0 30px; /* Add padding to the sides of the grid */
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding is included in the total width */
+}
+
+/* Poem box style */
+.poem-box {
+    background-color: #f7f7f7;
+    border: 2px solid #333;
+    padding: 20px;
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    text-align: center;
+    word-wrap: break-word;
+    width: 100%;  /* Takes full available width */
+    height: auto; /* Box height grows dynamically with content */
+    min-height: 150px; /* Optional: ensure a minimum height for consistency */
+    margin-bottom: 20px; /* Add some space at the bottom of each box */
+    box-sizing: border-box; /* Ensure padding and borders are included in the size */
+    border-radius: 30px; /* This rounds the edges of the poem box */
+}
+
+/* Hover effect on poem boxes */
+.poem-box:hover {
+    transform: scale(1.05);
+}
+
+/* Footer container */
+.footer {
+    background-color: #d8c6c6;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* This pushes the footer to the bottom */
+}
+
+/* Button container inside the footer */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Custom button styling */
+.custom-btn {
+    background-color: #4f4c4c;
+    border: 2px solid #333;
+    color: #fffafa;
+    border-radius: 20px;
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Link styling inside buttons */
+.btn-link {
+    text-decoration: none;
+    color: inherit; /* Inherit the color of the button */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .poems-grid {
+        grid-template-columns: 1fr; /* Switch to a single column on mobile */
+    }
+
+    .button-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .poems-heading {
+        font-size: 28px; /* Reduce heading size on smaller screens */
+    }
+}
+
+/* Header with Nav Icon */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    color: rgb(18, 17, 17);
+    padding: 5px;
+    text-align: left;
+    z-index: 1000;
+}
+
+.nav-icon {
+    font-size: 40px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Hide the nav menu initially */
+nav {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    background-color: #585555;
+    padding: 30px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Responsive nav adjustments */
+@media (max-width: 600px) {
+    header {
+        text-align: center;
+    }
+
+    .nav-icon {
+        margin-left: 0;
+    }
+
+    nav {
+        width: 90%;
+        left: 5%; /* Center nav menu on smaller screens */
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}

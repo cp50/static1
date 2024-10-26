@@ -1,0 +1,191 @@
+/* General page styling */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #f1e9e9;
+}
+
+/* Contacts container styling */
+.contacts-container {
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+/* Heading styling */
+.contacts-heading {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Contact info styling */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+}
+
+/* Contact item styling */
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center items horizontally */
+    margin-bottom: 20px;
+}
+
+/* Contacts Icons */
+.contact-item i {
+    font-size: 24px; /* Adjust the size of the icons */
+    color: black; /* Set the icons to black */
+    margin-right: 10px; /* Add some space between the icon and text */
+}
+
+/* Change icon color on hover to white */
+.contact-item:hover i {
+    color: white; /* Icons turn white on hover */
+}
+
+/* Text styling */
+.contact-text, .contact-link {
+    font-size: 20px;
+    color: black; /* Set text color to black */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Contact link hover */
+.contact-link:hover {
+    color: white; /* Links turn white on hover */
+}
+
+/* Hover effect for contact links */
+.contact-link:hover {
+    color: #555;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .contacts-heading {
+        font-size: 28px;
+    }
+
+    .contact-text, .contact-link {
+        font-size: 18px;
+    }
+
+    .contact-item i {
+        font-size: 24px;
+    }
+}
+
+/* Footer styling */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #eceff3;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.custom-btn {
+    background-color: #404345;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+    background-color: #495057;
+}
+
+.btn-link {
+    color: white;
+    text-decoration: none;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+}
+
+/* Header with Nav Icon */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    color: rgb(5, 5, 5);
+    padding: 10px;
+    text-align: left;
+}
+
+.nav-icon {
+    font-size: 40px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Hide the nav menu initially */
+nav {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    background-color: #4c4a4a;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Responsive Nav adjustments */
+@media screen and (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+
+    .nav-icon {
+        margin-left: 0;
+    }
+
+    nav {
+        width: 90%;
+        left: 5%; /* Center nav menu on smaller screens */
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}

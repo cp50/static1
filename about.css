@@ -1,0 +1,201 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1e2e2;
+    color: #333;
+}
+
+/* Container for the About section */
+.about-page {
+    padding: 50px 20px;
+    background-color: rgb(228, 220, 220);
+}
+
+/* Flexbox container for image and text */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px;
+    border: 1px solid #ddd; /* Optional: adds a border around the container */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+/* Image styling */
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    width: 500px; /* Adjust width according to your needs */
+    border-radius: 10px;
+}
+
+/* Text section styling */
+.about-text {
+    max-width: 50%; /* Ensures text takes up only half the width */
+    padding-left: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.large-letter {
+    font-size: 48px; /* Larger font size for B and S */
+    color: #333;
+    font-weight: bold;
+    line-height: 1;
+}
+
+/* Heading styling */
+.about-text h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Icon styling */
+.about-icon {
+    width: 25px; /* Adjust the size to your preference */
+    display: block;
+    margin-left: -3px;
+    margin-bottom: 20px;
+}
+
+/* Paragraph text styling */
+.about-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+    text-align: justify;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .about-image img {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .about-text {
+        max-width: 100%;
+        padding-left: 0;
+    }
+
+    .about-text h2 {
+        font-size: 28px; /* Adjust heading size for smaller screens */
+    }
+
+    .large-letter {
+        font-size: 36px; /* Adjust large letter size for smaller screens */
+    }
+}
+
+/* Footer button styling */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 15px;
+}
+
+.custom-btn {
+    background-color: #444343;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-btn .btn-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+}
+
+.custom-btn:hover {
+    background-color: #555;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.custom-btn:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Header styling */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    color: #111;
+    padding: 10px;
+    text-align: left;
+    z-index: 1000; /* Ensure header stays on top */
+}
+
+.nav-icon {
+    font-size: 40px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Hide nav menu initially */
+nav {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    background-color: #444;
+    padding: 30px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Responsive nav adjustments */
+@media screen and (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+
+    .nav-icon {
+        margin-left: 0;
+    }
+
+    nav {
+        width: 90%;
+        left: 5%; /* Center nav menu on smaller screens */
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
