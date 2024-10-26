@@ -138,10 +138,15 @@ header {
     text-align: left;
 }
 
+/* Nav Icon Styling */
 .nav-icon {
+    position: fixed; /* Keeps it fixed at the top */
+    top: 0px; /* Adjusts its distance from the top */
+    left: 10px; /* Adjusts its distance from the left */
     font-size: 40px;
     cursor: pointer;
-    margin-left: 10px;
+    z-index: 1001; /* Ensures it stays above other content */
+    margin-left: 0; /* Removes extra margin */
 }
 
 /* Hide the nav menu initially */
