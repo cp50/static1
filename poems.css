@@ -141,16 +141,16 @@ header {
     margin-left: 0; /* Removes extra margin */
 }
 
-/* Hide the nav menu initially */
+/* Fixed nav menu */
 nav {
     display: none;
-    position: absolute;
-    top: 50px;
+    position: fixed; /* Keeps nav fixed at the top */
+    top: 50px; /* Position it right below the header */
     left: 10px;
-    background-color: #585555;
+    background-color: #4e4a4a;
     padding: 30px;
-    border-radius: 5px;
-    z-index: 1000;
+    border-radius: 10px;
+    z-index: 1000; /* Ensure nav menu stays on top */
 }
 
 nav ul {
