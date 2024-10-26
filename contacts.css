@@ -83,19 +83,6 @@ html, body {
     .contact-item i {
         font-size: 24px;
     }
-
-    .button-container {
-        flex-direction: column; /* Stack buttons vertically on smaller screens */
-        align-items: center; /* Center buttons horizontally */
-        padding: 10px; /* Add some padding */
-    }
-
-    .custom-btn {
-        width: 100%; /* Make buttons take full width */
-        max-width: 300px; /* Limit button width */
-        padding: 15px; /* Increase padding for better touch targets */
-        font-size: 16px; /* Adjust font size */
-    }
 }
 
 /* Footer styling */
@@ -139,9 +126,12 @@ html, body {
     text-decoration: underline;
 }
 
+
+
+
 /* Header with Nav Icon */
 header {
-    position: fixed;
+    position:fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -152,9 +142,10 @@ header {
     z-index: 1000; /* Ensure header stays on top */
 }
 
+
 /* Nav Icon Styling */
 .nav-icon {
-    position: relative; /* Keeps it fixed at the top */
+    position:relative; /* Keeps it fixed at the top */
     top: 0px; /* Adjusts its distance from the top */
     left: 10px; /* Adjusts its distance from the left */
     font-size: 40px;
@@ -189,3 +180,5 @@ nav ul li a {
     text-decoration: none;
     font-size: 18px;
 }
+
+
