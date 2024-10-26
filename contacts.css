@@ -109,12 +109,14 @@ html, body {
     box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* Button container in footer */
 .button-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 20px; /* Space between buttons */
 }
 
+/* Custom button styling */
 .custom-btn {
     background-color: #404345;
     border: none;
@@ -130,6 +132,7 @@ html, body {
     background-color: #495057;
 }
 
+/* Link styling inside buttons */
 .btn-link {
     color: white;
     text-decoration: none;
