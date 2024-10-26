@@ -13,13 +13,9 @@ body {
     padding-top: 20px;
 }
 
-
-
-
-
 /* Header with Nav Icon */
 header {
-    position:relative;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -30,16 +26,14 @@ header {
     z-index: 1000; /* Ensure header stays on top */
 }
 
-
 /* Nav Icon Styling */
 .nav-icon {
-    position:relative; /* Keeps it fixed at the top */
-    top: 0px; /* Adjusts its distance from the top */
+    position: fixed; /* Keeps it fixed at the top */
+    top: 10px; /* Adjusts its distance from the top */
     left: 10px; /* Adjusts its distance from the left */
     font-size: 40px;
     cursor: pointer;
     z-index: 1001; /* Ensures it stays above other content */
-    margin-left: 0; /* Removes extra margin */
 }
 
 /* Fixed nav menu */
@@ -69,9 +63,6 @@ nav ul li a {
     font-size: 18px;
 }
 
-
-
-
 /* Main Content */
 .main-content {
     margin-top: 80px;
@@ -86,9 +77,6 @@ p {
     font-size: 16px;
     color: #666;
 }
-
-
-
 
 /* Homepage Image Styling */
 .homepage-image {
@@ -125,8 +113,6 @@ p {
     display: block;
 }
 
-
-
 /* Hover and Focus Effects */
 .custom-btn:hover {
     background-color: #555;
@@ -151,13 +137,15 @@ p {
         text-align: center;
     }
 
-    /* Center align nav icon and main content text */
-    .nav-icon {
-        margin-left: 0;
+    /* Override the header alignment on mobile */
+    header {
+        text-align: left; /* Keeps header text aligned left */
     }
 
-    header {
-        text-align: center;
+    /* Ensures nav icon is fixed to the left on mobile */
+    .nav-icon {
+        left: 10px;
+        margin-left: 0;
     }
 
     .main-content {
