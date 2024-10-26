@@ -76,6 +76,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 15px;
+    flex-wrap: wrap; /* Allows buttons to wrap if screen size is small */
 }
 
 /* Custom button styling */
@@ -161,8 +162,9 @@ nav ul li a {
 
     /* Adjust button container layout */
     .button-container {
-        flex-direction: column; /* Stack buttons vertically */
         gap: 10px; /* Reduce space between buttons */
+        justify-content: center; /* Center-align buttons */
+        flex-wrap: wrap; /* Wrap buttons on smaller screens */
     }
 
     /* Adjust poem box layout */
