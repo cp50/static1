@@ -95,6 +95,9 @@ p {
     align-items: center;
     margin-top: 30px;
     gap: 15px; /* Space between buttons */
+    flex-wrap: nowrap; /* Prevents buttons from stacking */
+    overflow-x: auto; /* Allows horizontal scrolling on smaller screens if needed */
+    padding: 10px;
 }
 
 .custom-btn {
@@ -127,16 +130,6 @@ p {
 
 /* Responsive Adjustments */
 @media screen and (max-width: 768px) {
-    /* Stack buttons vertically on smaller screens */
-    .button-container {
-        flex-direction: column;
-    }
-
-    .custom-btn {
-        width: 100%; /* Full-width buttons */
-        text-align: center;
-    }
-
     /* Override the header alignment on mobile */
     header {
         text-align: left; /* Keeps header text aligned left */
