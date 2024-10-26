@@ -99,41 +99,46 @@ body {
     }
 }
 
-/* Footer button styling */
+
+/* Footer container */
+.footer {
+    background-color: #d8c6c6;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* This pushes the footer to the bottom */
+}
+
+/* Button container inside the footer */
 .button-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 30px;
     gap: 15px;
+    flex-wrap: wrap; /* Allows buttons to wrap if screen size is small */
 }
 
+/* Custom button styling */
 .custom-btn {
-    background-color: #444343;
-    border: none;
-    padding: 10px 20px;
+    background-color: #4f4c4c;
+    border: 2px solid #333;
+    color: #fffafa;
     border-radius: 20px;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.custom-btn .btn-link {
-    color: #fff;
-    text-decoration: none;
     font-size: 18px;
-    font-weight: bold;
-    display: block;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .custom-btn:hover {
-    background-color: #555;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    background-color: #333;
+    color: #fff;
 }
 
-.custom-btn:focus {
-    outline: none;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+/* Link styling inside buttons */
+.btn-link {
+    text-decoration: none;
+    color: inherit; /* Inherit the color of the button */
 }
-
 /* Header styling */
 header {
     position: relative;
