@@ -144,7 +144,7 @@ header {
 
 /* Nav Icon Styling */
 .nav-icon {
-    position:relative; /* Keeps it fixed at the top */
+    position:fixed; /* Keeps it fixed at the top */
     top: 0px; /* Adjusts its distance from the top */
     left: 10px; /* Adjusts its distance from the left */
     font-size: 40px;
