@@ -101,30 +101,10 @@ body {
     color: inherit; /* Inherit the color of the button */
 }
 
-/* Mobile responsiveness */
-@media (max-width: 600px) {
-    .poems-grid {
-        grid-template-columns: 1fr; /* Switch to a single column on mobile */
-    }
-
-    .button-container {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .poems-heading {
-        font-size: 28px; /* Reduce heading size on smaller screens */
-    }
-}
-
-
-
-
-
 /* Nav Icon Styling */
 .nav-icon {
-    position:relative; /* Keeps it fixed at the top */
-    top: 0px; /* Adjusts its distance from the top */
+    position: fixed; /* Keeps it fixed at the top */
+    top: 10px; /* Adjusts its distance from the top */
     left: 10px; /* Adjusts its distance from the left */
     font-size: 40px;
     cursor: pointer;
@@ -159,4 +139,41 @@ nav ul li a {
     font-size: 18px;
 }
 
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    /* Adjust nav icon */
+    .nav-icon {
+        font-size: 30px;
+        top: 15px;
+        left: 15px;
+    }
 
+    /* Make the poems grid layout a single column */
+    .poems-grid {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 20px; /* Adjust gap for smaller screens */
+        padding: 0 15px; /* Reduce padding on sides */
+    }
+
+    .poems-heading {
+        font-size: 28px; /* Reduce heading size on smaller screens */
+    }
+
+    /* Adjust button container layout */
+    .button-container {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px; /* Reduce space between buttons */
+    }
+
+    /* Adjust poem box layout */
+    .poem-box {
+        padding: 15px; /* Adjust padding inside poem boxes */
+        font-size: 16px; /* Increase font size for readability */
+        min-height: 120px; /* Adjust minimum height */
+    }
+
+    /* Center-align text on smaller screens */
+    h1, p {
+        text-align: center;
+    }
+}
