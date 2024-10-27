@@ -29,45 +29,40 @@ html, body {
 .contact-info {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center horizontally */
+    align-items: center;
 }
 
 /* Contact item styling */
 .contact-item {
     display: flex;
     align-items: center;
-    justify-content: center; /* Center items horizontally */
+    justify-content: center;
     margin-bottom: 20px;
 }
 
 /* Contacts Icons */
 .contact-item i {
-    font-size: 24px; /* Adjust the size of the icons */
-    color: black; /* Set the icons to black */
-    margin-right: 10px; /* Add some space between the icon and text */
+    font-size: 24px;
+    color: black;
+    margin-right: 10px;
 }
 
 /* Change icon color on hover to white */
 .contact-item:hover i {
-    color: white; /* Icons turn white on hover */
+    color: white;
 }
 
 /* Text styling */
 .contact-text, .contact-link {
     font-size: 20px;
-    color: black; /* Set text color to black */
+    color: black;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 /* Contact link hover */
 .contact-link:hover {
-    color: white; /* Links turn white on hover */
-}
-
-/* Hover effect for contact links */
-.contact-link:hover {
-    color: #555;
+    color: white;
 }
 
 /* Responsive design */
@@ -82,6 +77,19 @@ html, body {
 
     .contact-item i {
         font-size: 24px;
+    }
+
+    .button-container {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .custom-btn {
+        padding: 8px 15px;
+        font-size: 16px;
+        width: 100%; /* Full width on mobile */
+        max-width: 150px; /* Optional max width */
+        border-radius: 15px;
     }
 }
 
@@ -126,9 +134,6 @@ html, body {
     text-decoration: underline;
 }
 
-
-
-
 /* Header with Nav Icon */
 header {
     position:fixed;
@@ -139,31 +144,30 @@ header {
     color: rgb(21, 20, 20);
     padding: 10px;
     text-align: left;
-    z-index: 1000; /* Ensure header stays on top */
+    z-index: 1000;
 }
-
 
 /* Nav Icon Styling */
 .nav-icon {
-    position:relative; /* Keeps it fixed at the top */
-    top: 0px; /* Adjusts its distance from the top */
-    left: 10px; /* Adjusts its distance from the left */
+    position:relative;
+    top: 0px;
+    left: 10px;
     font-size: 40px;
     cursor: pointer;
-    z-index: 1001; /* Ensures it stays above other content */
-    margin-left: 0; /* Removes extra margin */
+    z-index: 1001;
+    margin-left: 0;
 }
 
 /* Fixed nav menu */
 nav {
     display: none;
-    position: fixed; /* Keeps nav fixed at the top */
-    top: 50px; /* Position it right below the header */
+    position: fixed;
+    top: 50px;
     left: 10px;
     background-color: #4e4a4a;
     padding: 30px;
     border-radius: 10px;
-    z-index: 1000; /* Ensure nav menu stays on top */
+    z-index: 1000;
 }
 
 nav ul {
@@ -180,5 +184,3 @@ nav ul li a {
     text-decoration: none;
     font-size: 18px;
 }
-
-
